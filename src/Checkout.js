@@ -5,8 +5,8 @@ const Checkout = ({ total }) => {
   const [finalTotal, setFinalTotal] = useState(total);
 
   const handleApplyDiscount = () => {
-    if (discountCode === 'DISCOUNT10') {
-      const discountAmount = total * 0.10; // 10% discount
+    if (discountCode === 'SAVE50') {
+      const discountAmount = total * 0.50; // 10% discount
       setFinalTotal(total - discountAmount);
     } else {
       alert('Invalid coupon code');
